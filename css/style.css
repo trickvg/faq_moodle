@@ -1,0 +1,583 @@
+*
+{
+    font-family: verdana;
+
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    height: 100%;
+}
+
+/*Cabeçalho */
+header
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    width: 100%;
+    min-height: 60px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+
+    border-top: solid 3px #928d8d;
+    border-bottom: solid 2px #928d8d;
+    background-color: #30B8E4;
+}
+header .titulo_cab
+{
+    text-align: center;
+
+    color: #fff;
+}
+header h1
+{
+    padding: 10px;
+
+    text-shadow: 3px 3px #8f9a9a;
+}
+/* Logo UFCSPA*/
+.logo_topo_esquerda
+{
+    float: left;
+
+    width: 107px;
+    height: 67px;
+    margin-left: 10px;
+}
+/*Logo Moodle*/
+.logo_topo_direita
+{
+    float: right;
+
+    width: 65px;
+    height: 65px;
+    margin-right: 20px;
+}
+/*Fim Cabeçalho*/
+
+/*Sections*/
+section
+{
+    margin: 70px;
+    padding: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    background-color: #b0e2f7;
+}
+/* Section de introdução*/
+.section_intro
+{
+    margin-top: 120px;
+    margin-right: 70px;
+    margin-bottom: 25px;
+    margin-left: 70px;
+}
+.section_intro p
+{
+    text-indent: 2em;
+}
+.section_conteudo
+{
+    padding: 25px;
+}
+p.firstp:first-letter
+{
+    font-size: 200%;
+    font-weight: bold;
+
+    color: #187bd8;
+}
+/* Menus*/
+ul
+{
+    width: 150px;
+    margin-left: 23px;
+
+    list-style: none;
+}
+.menu
+{
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+li.menu ul
+{
+    position: absolute;
+    top: 0;
+    left: 149px;
+
+    display: none;
+    float: right;
+}
+
+ul.menu li a
+{
+    display: block;
+
+    width: 500px;
+    padding: 15px;
+
+    cursor: pointer;
+    text-decoration: none;
+
+    color: #217a94;
+    border: 3px solid #ccc;
+    background: #fff;
+}
+/* -- Fim Menu -- */
+
+/* -- Menu 2-- */
+ul.menu2
+{
+    width: 400px;
+    padding-left: 30px;
+
+    list-style-type: decimal;
+
+    color: #217a94;
+    background-color: #fff;
+}
+
+li.menu2 ul
+{
+    position: absolute;
+    top: 0;
+    left: 139px;
+
+    display: none;
+    float: right;
+}
+
+ul.menu2 li a
+{
+    display: block;
+
+    width: 450px;
+    padding: 18px;
+
+    text-decoration: none;
+
+    color: #207a94;
+}
+ul.menu2 li a:hover
+{
+    display: block;
+
+    width: 450px;
+    padding: 23px;
+
+    text-decoration: none;
+
+    color: #ff0f38;
+}
+
+/*-- Fim Menu 2--*/
+
+/* Guia manual*/
+article
+{
+    width: 450px;
+    height: 150px;
+    padding: 20px;
+}
+article.article_manual
+{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    margin-left: 280px;
+
+    padding: 5px;
+    padding-top: 20px;
+
+    background-color: #63d976;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #928d8d;
+}
+article div#botoes_guiam
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.botao_linkm
+{
+    margin: 25px;
+    padding: 10px;
+    padding-top: 10px;
+
+    text-decoration: none;
+
+    color: #fff;
+    border-radius: 7px;
+    background-color: #4792de;
+}
+
+div.posiona_btn
+{
+    float: right;
+}
+
+/*Botão Faq Moodle Docs*/
+.botao_faqm
+{
+    margin: 150px;
+    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    text-decoration: none;
+
+    color: #fff;
+    border-radius: 7px;
+    background-color: #6c336d;
+}
+.botao_faqm img
+{
+    padding-right: 10px;
+}
+
+/*-- Rodapé --*/
+footer
+{
+    font-size: 18px;
+    font-weight: bold;
+
+    bottom: 0;
+
+    clear: both;
+
+    margin-top: 20px;
+    padding: 50px;
+
+    text-align: center;
+
+    color: #fff;
+    border-top: solid 2px #31b8e4;
+    border-bottom: solid 2px #31b8e4;
+    background-color: #928d8d ;
+}
+/*Logo UFCSPA Rodapé*/
+.logorodape
+{
+    width: 83px;
+    height: 18px;
+}
+.copyright
+{
+    font-size: 14px;
+
+    float: right;
+}
+/*Fim Rodapé*/
+
+/* Modal */
+.window
+{
+    position: absolute;
+    z-index: 9900;
+
+    display: none;
+
+    width: 480px;
+    margin: 0 auto;
+    padding: 25px;
+
+    -webkit-transition: all .5s .5s ease-in-out;
+            transition: all .5s .5s ease-in-out;
+
+    border-radius: 30px;
+    background: #fff;
+}
+.window a
+{
+    font-weight: bold;
+}
+.window p
+{
+    text-indent: 2em;
+}
+.fechar
+{
+    display: block;
+    float: right;
+}
+
+/*Mascara do Modal*/
+#mascara
+{
+    position: absolute;
+    z-index: 9000;
+    top: 0;
+    left: 0;
+
+    display: none;
+
+    background-color: #000;
+}
+/*-- Fim Modal -- */
+
+/*Screens*/
+@media screen and (max-width: 700px)
+{
+    header
+    {
+        float: none;
+
+        width: auto;
+    }
+    h1
+    {
+        font-size: 22px;
+    }
+    footer
+    {
+        font-size: 12pt;
+
+        float: none;
+
+        width: auto;
+    }
+    footer p
+    {
+        font-size: 10pt;
+    }
+    footer p.copyright
+    {
+        font-size: 10pt;
+
+        float: none;
+
+        width: auto;
+    }
+
+    section
+    {
+        float: none;
+
+        width: auto;
+        margin: 25px;
+        padding: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .section_intro
+    {
+        margin-top: 150px;
+        margin-right: 25px;
+        margin-bottom: 25px;
+        margin-left: 25px;
+    }
+
+    ul.menu
+    {
+        font-size: 11pt;
+
+        position: relative;
+
+        float: none;
+
+        width: auto;
+        margin-right: 25px;
+        margin-left: 0;
+    }
+    ul.menu li a
+    {
+        display: block;
+
+        width: auto;
+        padding: 5px;
+
+        border: 1px solid #ccc;
+    }
+    ul.menu2
+    {
+        font-size: 9pt;
+        width: auto;
+
+        float: none;
+
+        padding-left: 10px;
+    }
+    ul.menu2 li a:hover
+    {
+    width:auto;
+    }
+    article
+    {
+        float: none;
+
+        width: auto;
+        height: 150px;
+        margin: 25px;
+    }
+    article.article_manual
+    {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 25px;
+        padding: 5px;
+        padding-top: 5px;
+    }
+    .botao_linkm
+    {
+        font-size: 10pt;
+
+        float: none;
+
+        width: auto;
+        margin: 13px;
+        margin: 5px;
+        padding: 10px;
+        padding-top: 10px;
+
+        border-radius: 7px;
+    }
+    .window
+    {
+        position: absolute;
+        z-index: 9900;
+
+        display: none;
+        display: none;
+        float: none;
+
+        width: 250px;
+        margin: 0 auto;
+        padding: 15px;
+    }
+    #mascara
+    {
+        position: absolute;
+        z-index: 9000;
+        top: 0;
+        left: 0;
+
+        display: none;
+
+        background-color: #000;
+    }
+    .botao_faqm
+    {
+        font-size: 9pt;
+    }
+    .botao_faqm img
+    {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    header
+    {
+        font-size: 10pt;
+
+        height: auto;
+    }
+    h1
+    {
+        font-size: 18px;
+    }
+    p
+    {
+        font-size: 13px;
+    }
+    footer
+    {
+        float: none;
+
+        width: auto;
+    }
+    footer p
+    {
+        font-size: 8pt;
+    }
+    footer p.copyright
+    {
+        font-size: 7pt;
+
+        float: none;
+
+        width: auto;
+    }
+
+    .botao_faqm
+    {
+        display: none;
+
+        width: auto;
+    }
+
+    .window
+    {
+        font-size: 9pt;
+
+        position: absolute;
+
+        display: none;
+        display: none;
+        float: none;
+
+        width: 180px;
+        padding: 15px;
+    }
+    span.escondetexto
+    {
+        display: none;
+    }
+    #mascara
+    {
+        position: absolute;
+        z-index: 9000;
+        top: 0;
+        left: 0;
+
+        display: none;
+
+        background-color: #000;
+    }
+    .botao_linkm
+    {
+        float: none;
+
+        width: center;
+        margin: 50px;
+        padding-top: 15px;
+        padding-bottom: 5px;
+
+        border-radius: 7px;
+    }
+    
+    .botao_linkm img
+    {
+        padding: 2px;
+    }
+    .logo_topo_esquerda
+    {
+        float: left;
+
+        width: 77px;
+        height: 47px;
+        margin-left: 10px;
+    }
+
+    .logo_topo_direita
+    {
+        float: right;
+
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+    }
+}
+/*Fim Screens*/

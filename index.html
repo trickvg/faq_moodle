@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="Utf-8" />
+	<title>FAQ - MOODLE UFCSPA</title>
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+	<link rel="shortcut icon" href="img/logos_ufcspa/favicon_moodle.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/js.js" type="text/javascript" charset="utf-8"></script>
+	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+	<script>
+		$(document).ready(function() {
+			$("a[rel=modal]").click(function(ev) {
+				ev.preventDefault();
+
+				var id = $(this).attr("href");
+				var alturaTela = $(document).height();
+				var larguraTela = $(window).width();
+
+				//colocando a mascara no modal
+				$('#mascara').css({
+					'width': larguraTela,
+					'height': alturaTela
+				});
+				$('#mascara').fadeIn(1000);
+				$('#mascara').fadeTo("slow", 0.8);
+
+				var left = ($(window).width() / 2) - ($(id).width() / 2);
+				var top = ($(window).height() / 2) - ($(id).height() / 2);
+
+				$(id).css({
+					'top': top,
+					'left': left
+				});
+				$(id).show();
+			});
+
+			$("#mascara").click(function() {
+				$(this).hide();
+				$(".window").hide();
+			});
+
+			$('.fechar').click(function(ev) {
+				ev.preventDefault();
+				$("#mascara").hide();
+				$(".window").hide();
+			});
+		});
+
+		// Fechando janelas modal com a tecla ESC
+		$(document).keyup(function(event) {
+			if (event.which == 27) {
+				$(".window").hide();
+				$("#mascara").hide();
+			}
+		});
+	</script>
+</head>
+
+<body>
+	<!-- Cabeçalho-->
+	<header>
+		<a href="http://www.ufcspa.edu.br/" target="_blank"><img class="logo_topo_esquerda" src="img/logos_ufcspa/logo_branco.png" alt="Logo pequeno da UFCSPA"></a>
+		<a href="http://ead.ufcspa.edu.br/moodle/" target="_blank"><img class="logo_topo_direita" src="img/logos_ufcspa/logo_moodle72x72.png" alt="Logo pequedo do Moodle"></a>
+		<div class="titulo_cab">
+			<h1>Moodle - UFCSPA</h1></div>
+	</header>
+
+	<!--Section Intro-->
+	<section class="section_intro">
+		<h3>FAQ Moodle UFCSPA</h3>
+		<p><strong>O FAQ MOODLE UFCSPA</strong> é uma listagem das dúvidas mais frequentes que alunos e professores enfrentam com o Moodle. </p>
+		<p>O grande objetivo do FAQ é auxiliar e orientar os utilizadores do Moodle - UFCSPA, relatando de uma forma simples e enfática questões que surgem frequentemente nos sistemas de suporte. </p>
+		<p>Caso necessite de um auxílio mais específico ou tenha alguma dúvida não relatada nos tópicos, contate o Suporte do Moodle UFCSPA através do email <strong><i>adminmoodle@ufcspa.edu.br</i></strong></p>
+	</section>
+
+	<!-- mascara para cobrir o site -->
+	<div id="mascara"></div>
+
+	<!--Section Principal-->
+	<section class="section_conteudo">
+		<h1>Perguntas mais frequentes do Moodle - UFCSPA</h1>
+		<!-- Conteúdo dos popups -->
+
+		<!--Lista 1-->
+		<div id="pop1.1" class="window">
+			<a href="#" onclick="document.getElementById('pop1.1').style.display='none';"><img src="icons/closecred24.png" class="fechar" height="24" width="24" alt="Fecha Modal"></a>
+			<br />
+			<h3>Por que não consigo me inscrever na disciplina?</h3>
+			<p class="firstp"> Geralmente os professores e regentes das disciplinas constumam utilizar chaves de inscrição como método de inscrição nos Cursos. Estas chaves são geradas pelos próprios professores e regentes, e devem ser fornecidos aos estudantes para o acesso à disciplina.</p>
+			<p>Por acaso se a disciplina não necessitar de nenhuma chave de inscrição, basta apenas inscrever-se que você estará automaticamente inscrito na disciplina.</p>
+			<p>Caso você não consiga inscrever-se na disciplina desejada, talvez o problema seja o navegador, então logo teste em outros navegadores para que consiga logar-se no Moodle - UFCSPA ou contate o seu professor para que lhe insira manualmente no curso.
+				</p>
+			<p>Para mais informações acesse o link abaixo.</p>
+			<a href="http://ead.ufcspa.edu.br/moodle" target="_blank">Acessando o MOODLE - UFCSPA </a>
+		</div>
+
+		<div id="pop1.2" class="window">
+			<a href="#" onclick="document.getElementById('pop1.2').style.display='none';"><img src="icons/closecred24.png" class="fechar" height="24" width="24" alt="Fecha Modal"></a>
+			<br />
+			<h3>Como faço login no Moodle?</h3>
+			<p class="firstp">Para acessar o Moodle - UFCSPA, você deve utilizar o seu usuário institucional <strong><i>(ex: testemoodle )</i></strong> e a senha que você recebeu dos sistemas da UFCSPA.</p>
+			<p>Logo se você for usuário externo, preencha o campo <strong>Identificação de Usuário</strong> com o email <strong><i>(ex: testemoodle@gmail.com)</i></strong> e a senha cadastradas no primeiro acesso.</p>
+			<p>Caso você não consiga acessar o Moodle, segue abaixo o link do Manual do Moodle - UFCSPA explicando detalhadamente como acessar.</p>
+			<a href="http://ead.ufcspa.edu.br/moodle/mod/page/view.php?id=26049" target="_blank">Veja mais sobre login no Moodle </a>
+		</div>
+
+		<div id="pop1.3" class="window">
+			<a href="#" onclick="document.getElementById('pop1.3').style.display='none';"><img src="icons/closecred24.png" class="fechar" height="24" width="24" alt="Fecha Modal"></a>
+			<br />
+			<h3>Esqueci a minha senha, como procedo?</h3>
+			<p class="firstp">Caso você esqueceu ou não lembra de sua senha e usuário institucional, entre em contato com o Suporte da UFCSPA pelo email <strong>informatica@ufcspa.edu.br</strong> ou abra um chamado para a recuperação.</p>
+			<a href="http://nti.ufcspa.edu.br/redes/?a=contato" target="_blank">Acesse aqui para abrir um chamado </a>
+		</div>
+
+		<!--Lista 2-->
+		<div id="pop2.1" class="window">
+			<a href="#" onclick="document.getElementById('pop2.1').style.display='none';"><img src="icons/closecred24.png" class="fechar" height="24" width="24" alt="Fecha Modal"></a>
+			<br />
+			<h3>Como enviar tarefas e arquivos?</h3>
+			<p class="firstp">Para enviar arquivos e tarefas nas disciplinas, você deve sempre ir até o tópico de envio da tarefa e chegando lá selecionar a caixa pontilhada. A partir disso, você deve arrastar o arquivo que deseja enviar ou clicar na caixa para que você seja redirecionado
+				ao diretório de envio.</p>
+			<p>Acesse o link abaixo para saber mais sobre envios de tarefas e arquivos no Moodle.</p>
+			<a href="http://ead.ufcspa.edu.br/moodle/mod/page/view.php?id=28237" target="_blank">Veja aqui como enviar arquivos </a>
+		</div>
+
+		<div id="pop2.2" class="window">
+			<a href="#" onclick="document.getElementById('pop2.2').style.display='none';"><img src="icons/closecred24.png" class="fechar" height="24" width="24" alt="Fecha Modal"></a>
+			<br />
+			<h3>Não consigo participar de fóruns</h3>
+			<p class="firstp">Para participar de fóruns é muito simples. Você deve ir até o recurso <strong>Fórum</strong> da disciplina (geralmente no tópico de introdução do curso) e chegando lá aparecerá a listagem de tópicos que foram e estão sendo discutidos na disciplia.
+				Você poderá responder à tópicos existentes ou acrescentar um novo tópico para discussão.</p>
+			<p>Para mais informações sobre Fóruns no Moodle, acesse o link baixo.</p>
+			<a href="http://ead.ufcspa.edu.br/moodle/mod/page/view.php?id=28209" target="_blank">Participando de fóruns </a>
+		</div>
+
+		<!--Lista 3-->
+		<div id="pop3.1" class="window">
+			<a href="#" onclick="document.getElementById('pop3.1').style.display='none';"><img src="icons/closecred24.png" class="fechar" height="24" width="24" alt="Fecha Modal"></a>
+			<br />
+			<h3>Onde visualizo os meus cursos?</h3>
+			<p class="firstp">Para visualizar os seus cursos, você deve selecionar o item <strong>Cursos</strong>, localizado na barra superior azul do Moodle. Após de clicar no item, aparecerá para você a listagem de cursos que estás inscrito no Moodle.</p>
+			<p>Você também pode visualizar seus cursos através do link abaixo.</p>
+			<a href="http://ead.ufcspa.edu.br/moodle/my/" target="_blank">Visualizando cursos </a>
+		</div>
+
+		<div id="pop3.2" class="window">
+			<a href="#" onclick="document.getElementById('pop3.2').style.display='none';"><img src="icons/closecred24.png" class="fechar" height="24" width="24" alt="Fecha Modal"></a>
+			<br />
+			<h3>Onde visualizo as minhas notas e tarefas enviadas?</h3>
+			<p class="firstp">Para visualizar as suas notas e tarefas enviadas na disciplina, você deve passar o mouse em cima de sua foto, localizado à direita na barra de navegação azul do Moodle, e ir até o item <strong>Notas de Curso</strong>. Após clicar neste item aparecerá
+				para você a listagem de notas e das tarefas que você realizou ao longo da disciplina.</p>
+			<p>Caso você não consiga visualizar as suas notas, segue abaixo o link do manual do Moodle explicando detalhadamente este recurso.</p>
+			<a href="http://ead.ufcspa.edu.br/moodle/mod/page/view.php?id=28210" target="_blank">Visualizando as notas e atividades enviadas na disciplina </a>
+		</div>
+
+		<!--Lista 4-->
+		<div id="pop4.1" class="window">
+			<a href="#" onclick="document.getElementById('pop4.1').style.display='none';"><img src="icons/closecred24.png" class="fechar" height="24" width="24" alt="Fecha Modal"></a>
+			<br />
+			<h3>Como inserir alunos manualmente no curso?</h3>
+			<p class="firstp">Somente <strong>professores e regentes de disciplina</strong> que possuem a permissão de inscrever manualmente os alunos nas disciplinas do Moodle. Para inscrever alunos manualmente, você deve ir até o item <strong>Inscrições Manuais</strong>, localizado
+				no menu <strong>Administração</strong>, que você será redirecionado para a inscrição de usuários no curso.</p>
+			<p>Caso você tiver dificuldades ou dúvidas segue abaixo o link do Manual do Moodle explicando melhor o processo de inscrição manual.</p>
+			<a href="http://ead.ufcspa.edu.br/moodle/mod/page/view.php?id=25807" target="_blank">Inscrição manual de alunos no Moodle</a>
+		</div>
+
+		<div id="pop4.2" class="window">
+			<a href="#" onclick="document.getElementById('pop4.2').style.display='none';"><img src="icons/closecred24.png" class="fechar" height="24" width="24" alt="Fecha Modal"></a>
+			<br />
+			<h3>Como excluir alunos do curso?</h3>
+			<p class="firstp">O processo de exclusão de alunos na disciplina é simples. Para excluir alunos manualmente na disciplina, você deve ir até a pasta <strong>Usuários</strong> e selecionar o item <strong>Inscrições Manuais</strong>, localizado no menu <strong>Administração</strong>,
+				que você será redirecionado para a inscrição do curso. Chegando lá basta apenas procurar pelo aluno que deseja excluir e selecionar o item representado com <strong>X</strong> na coluna <strong>Métodos de inscrição</strong> que você excluirá o aluno
+				da disciplina.</p>
+		</div>
+
+		<div id="pop4.3" class="window">
+			<a href="#" onclick="document.getElementById('pop4.3').style.display='none';"><img src="icons/closecred24.png" class="fechar" height="24" width="24" alt="Fecha Modal"></a>
+			<br />
+			<h3>Como faço para reutilizar a disciplina?</h3>
+			<p class="firstp">Reutilizar a disciplina é uma ótima maneira de excluir dados e usuários antigos para poder utilizar novamente a disciplina, mantendo as estruturas principais e evitando a criação de uma nova sala.</p>
+			<p>Primeiramente você deve ir até o item <strong>Reconfigurar</strong>, localizado no menu <strong>Administração</strong>. Logo após clicar você será redirecionado para a tela de <strong>Reconfiguração de cursos</strong>, onde você poderá selecionar todo
+				os itens que desejas excluir da disciplina para o reaproveitamento.</p>
+			<p>Este recurso de reutilização da disciplina requer bastante cuidado, já que as informações depois de excluídas jamais poderão ser recuperadas.</p>
+			<p>Segue abaixo o link do Manual do Moodle explicando detalhamente como funciona este recurso.</p>
+			<a href="http://ead.ufcspa.edu.br/moodle/mod/page/view.php?id=27013" target="_blank">Reutilizando a disciplina </a>
+		</div>
+
+		<div id="pop4.4" class="window">
+			<a href="#" onclick="document.getElementById('pop4.4').style.display='none';"><img src="icons/closecred24.png" class="fechar" height="24" width="24" alt="Fecha Modal"></a>
+			<br />
+			<h3>Como adicionar recursos e atividades na minha disciplina no Moodle?</h3>
+			<p class="firstp">Primeiramente você deve localizar o item <strong>+ Adicionar uma atividade ou recurso</strong> que são encontrados sempre aos finais de cada tópico no curso. </p>
+			<p>Este recurso só poderá ser adicionado se o modo de edição estiver habilitado, caso contrário não será possível adicionar atividades e recursos na disciplina.\</p>
+			<p>Segue abaixo o link do Manual do Moodle explicando detalhadamente a adição de recursos e atividades.</p>
+			<a href="http://ead.ufcspa.edu.br/moodle/mod/page/view.php?id=25925" target="_blank">Adicionando recursos e atividades no Moodle </a>
+		</div>
+
+		<div id="pop4.5" class="window">
+			<a href="#" onclick="document.getElementById('pop4.5').style.display='none';"><img src="icons/closecred24.png" class="fechar" height="24" width="24" alt="Fecha Modal"></a>
+			<br />
+			<h3>Como realizo a troca de regência de alguma disciplina no Moodle?</h3>
+			<p class="firstp">A troca de regência de disciplina geralmente ocorre quando o atual professor regente não administra mais aquela determinada disciplina, deixando-a sendo responsável. </p>
+			<p>O indicado é que o professor antes de deixar a disciplina disponibilize a regência da mesma para o seu sucessor, aproveitando a sala já existente.</p>
+			<p>Claro que as vezes a troca de regência não ocorre dessa maneira por diversos fatores tais como o professor não acessa mais a disciplina ou até mesmo não participa mais do corpo docente do curso. Nessa situação o indicado é entrar em contato com o <strong>NEAD</strong>				através do email
+				<strong><i>nead@ufcspa.edu.br</i></strong> para que os mesmos analizem a situação da disciplina.</p>
+		</div>
+		<!--/ Fim Conteúdo dos popups do Menu /-->
+
+		<!-- Menu -->
+		<ul class="menu">
+			<li>
+				<a href="#menu" onclick="toggle('lista1');"><img src="icons/arrow_down24.png" height="16" width="16" alt="down botão"> Acessando e navegando no Moodle - UFCSPA</a>
+			</li>
+			<ul class="menu2" id="lista1" style="display: none;">
+				<li><a rel="modal" onclick="document.getElementById('pop1.1').style.display='block';">Por que não consigo me inscrever na disciplina?</a> </li>
+				<li><a rel="modal" onclick="document.getElementById('pop1.2').style.display='block';">Como faço login no Moodle?</a> </li>
+				<li><a rel="modal" onclick="document.getElementById('pop1.3').style.display='block';">Esqueci a minha senha, como procedo?</a> </li>
+			</ul>
+			<li>
+				<a href="#menu" onclick="toggle('lista2');"><img src="icons/arrow_down24.png" height="16" width="16" alt="down botão"> Conteúdos de disciplina</a>
+			</li>
+			<ul class="menu2" id="lista2" style="display: none;">
+				<li><a rel="modal" onclick="document.getElementById('pop2.1').style.display='block';">Como enviar tarefas e arquivos? </a></li>
+				<li><a rel="modal" onclick="document.getElementById('pop2.2').style.display='block';">Não consigo participar de fóruns </a></li>
+			</ul>
+			<li>
+				<a href="#menu" onclick="toggle('lista3');"><img src="icons/arrow_down24.png" height="16" width="16" alt="down botão"> Acessando as disciplinas</a>
+			</li>
+			<ul class="menu2" id="lista3" style="display: none;">
+				<li><a rel="modal" onclick="document.getElementById('pop3.1').style.display='block';">Onde visualizo os meus cursos?</a></li>
+				<li><a rel="modal" onclick="document.getElementById('pop3.2').style.display='block';">Onde visualizo as minhas notas e tarefas enviadas?</a></li>
+			</ul>
+			<li>
+				<a href="#menu" onclick="toggle('lista4');"><img src="icons/arrow_down24.png" height="16" width="16" alt="down botão"> Administração de curso</a>
+			</li>
+			<ul class="menu2" id="lista4" style="display: none;">
+				<li><a rel="modal" onclick="document.getElementById('pop4.1').style.display='block';">Como inserir alunos manualmente no curso? </a></li>
+				<li><a rel="modal" onclick="document.getElementById('pop4.2').style.display='block';">Como excluir alunos do curso?</a></li>
+				<li><a rel="modal" onclick="document.getElementById('pop4.3').style.display='block';">Como faço para reutilizar a disciplina?</a></li>
+				<li><a rel="modal" onclick="document.getElementById('pop4.4').style.display='block';">Como adicionar recursos e tarefas na minha disciplina no Moodle?</a></li>
+				<li><a rel="modal" onclick="document.getElementById('pop4.5').style.display='block';">Como realizo a troca de regência na disciplina?</a></li>
+
+			</ul>
+		</ul>
+		<!--/ Fim Menu/-->
+	</section>
+
+	<!-- Artigo guia manual Moodle-->
+	<article class="article_manual">
+		<h4>Consulte os manuais do Moodle - UFCSPA</h4>
+		<div id="botoes_guiam">
+			<p>
+				<a class="botao_linkm" href="http://ead.ufcspa.edu.br/moodle/course/view.php?id=997" target="_blank"><img src="icons/graduation2424.png" height="24" width="24" alt="Icone Aluno"> <span class="escondetexto">Manual Guia do Moodle UFCSPA - Aluno</span></a>
+			</p>
+			<br />
+			<p>
+				<a class="botao_linkm" href="http://ead.ufcspa.edu.br/moodle/course/view.php?id=650" target="_blank"><img src="icons/teacher24.png" height="24" width="	24" alt="Icone Professor"> <span class="escondetexto">Manual Guia do Moodle UFCSPA - Professor</span></a>
+			</p>
+		</div>
+	</article>
+
+	<!-- Botão Faq do Moodle Docs -->
+	<div class="posiona_btn">
+		<a class="botao_faqm" href="https://docs.moodle.org/all/pt_br/FAQ" target="_blank"> <img src="img/logos_ufcspa/favicon_moodlep.ico" height="24" width="24" alt=""> FAQ do Moodle Docs </a>
+	</div>
+
+	<!-- Rodapé-->
+	<footer>
+		<a href="http://www.ufcspa.edu.br/" target="_blank"><img class="logorodape" src="img/logos_ufcspa/logo_rodape.png" alt="Logo pequeno rodapé"></a>
+		<br />
+		<p>UNIVERSIDADE FEDERAL DE CIÊNCIA DA SAÚDE DE PORTO ALEGRE</p>
+		<p></p>
+		<p class="copyright">&copy 2016 NTI - UFCSPA</p>
+	</footer>
+	<!-- Fim Rodapé -->
+</body>
+
+</html>
